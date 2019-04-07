@@ -9,6 +9,12 @@ export default {
     pagePermission: '页面权限',
     directivePermission: '指令权限',
     icons: '图标',
+    policies: '旅游规划拟定与实施',
+    tourStandard: '政策法规标准规范',
+    tourPlanHarvest: '旅游规划成果管理',
+    tourRouteManage: '旅游线路开发管理',
+    importantTourProjectManage: '重大旅游建设项目管理',
+    scenicSpots: '旅游资源开发与保护(景区）',
     components: '组件',
     componentIndex: '介绍',
     tinymce: '富文本编辑器',
@@ -99,6 +105,9 @@ export default {
   guide: {
     description: '引导页对于一些第一次进入项目的人很有用，你可以简单介绍下项目的功能。本 Demo 是基于',
     button: '打开引导'
+  },
+  policies: {
+    imageUploadTips: '由于我在使用时它只有vue@1版本，而且和mockjs不兼容，所以自己改造了一下，如果大家要使用的话，优先还是使用官方版本。'
   },
   components: {
     documentation: '文档',

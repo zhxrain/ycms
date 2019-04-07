@@ -7,6 +7,8 @@ Vue.use(Router)
 import Layout from '@/layout'
 
 /* Router Modules */
+import policiesRouter from './modules/policies'
+import scenicSpotsRouter from './modules/scenicSpots'
 import componentsRouter from './modules/components'
 import chartsRouter from './modules/charts'
 import tableRouter from './modules/table'
@@ -170,6 +172,8 @@ export const asyncRoutes = [
   },
 
   /** when your routing map is too long, you can split it into small modules **/
+  policiesRouter,
+  scenicSpotsRouter,
   componentsRouter,
   chartsRouter,
   nestedRouter,

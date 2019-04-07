@@ -10,6 +10,7 @@ export default {
     directivePermission: 'Directive Permission',
     icons: 'Icons',
     components: 'Components',
+    policies: 'Policies',
     componentIndex: 'Introduction',
     tinymce: 'Tinymce',
     markdown: 'Markdown',
