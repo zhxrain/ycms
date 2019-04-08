@@ -1,10 +1,12 @@
 <template>
-    <div id="map" ref="rootmap">
-
+    <div class="map-container">
+        <div id="map" ref="rootmap"></div>
+        <Maptools :maptools="maptools"></Maptools>
     </div>
 </template>
 
 <script>
+import Maptools from "@/components/map/maptools.vue";
 import "ol/ol.css";
 import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
@@ -107,6 +109,10 @@ var attributions = new Attribution({
     html: '&copy; <a class="ol-attribution-amap" ' + 'href="http://ditu.amap.com/">' + '高德地图</a>'
 });
 export default {
+  components: {
+      Maptools
+  },
+  props: ['maptools'],
   data() {
     return {
       map: null
@@ -167,7 +173,10 @@ export default {
 </script>
 
 <style>
-#map{height:100%;}
+.map-container, #map {
+    width: 100%;
+    height: 100%;
+}
 /*隐藏ol的一些自带元素*/
 .ol-attribution,.ol-zoom { display: none;}
 
